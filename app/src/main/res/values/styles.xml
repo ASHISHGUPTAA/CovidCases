@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+    <style name="ToolBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorAccent">#FFFAFA</item>
+        <item name="colorControlNormal">#c5c5c5</item>
+    </style>
+    <style name="HintText" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+</resources>

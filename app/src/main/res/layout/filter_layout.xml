@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="8.5"
+                android:padding="10dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="0dp"
+                android:text="@string/filter_data"
+                android:textColor="#11BAC4"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                android:clickable="true"
+                android:contentDescription="@string/cancel"
+                android:focusable="true"
+                android:src="@drawable/cancel_green" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:baselineAligned="false">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_weight="1"
+                app:hintTextAppearance="@style/HintText">
+
+                <EditText
+                    android:id="@+id/tot_case_grt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/total_cases_grt"
+                    android:inputType="number"
+                    android:maxLength="100"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_weight="1"
+                app:hintTextAppearance="@style/HintText">
+
+                <EditText
+                    android:id="@+id/tot_case_less"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/total_cases_less"
+                    android:inputType="number"
+                    android:maxLength="100"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/lightGrey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:baselineAligned="false">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_weight="1"
+                app:hintTextAppearance="@style/HintText">
+
+                <EditText
+                    android:id="@+id/death_grt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/total_death_grt"
+                    android:inputType="number"
+                    android:maxLength="100"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_weight="1"
+                app:hintTextAppearance="@style/HintText">
+
+                <EditText
+                    android:id="@+id/death_less"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/total_death_less"
+                    android:inputType="number"
+                    android:maxLength="100"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/lightGrey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:baselineAligned="false">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_weight="1"
+                app:hintTextAppearance="@style/HintText">
+
+                <EditText
+                    android:id="@+id/tot_rec_grt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/total_recovered_grt"
+                    android:inputType="number"
+                    android:maxLength="100"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_weight="1"
+                app:hintTextAppearance="@style/HintText">
+
+                <EditText
+                    android:id="@+id/tot_rec_less"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/total_recovered_less"
+                    android:inputType="number"
+                    android:maxLength="100"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/lightGrey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="50"
+                android:background="@drawable/border_line"
+                android:gravity="center"
+                android:text="@string/clear"
+                android:textSize="20sp"
+                android:backgroundTint="@color/green_color"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/done"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_weight="50"
+                android:background="@drawable/border_line"
+                android:gravity="center"
+                android:text="@string/done"
+                android:textSize="20sp"
+                android:textColor="#2E892B"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

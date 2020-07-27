@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#0077B5"
+    app:cardCornerRadius="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/country_asc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="24dp">
+
+            <TextView
+                android:id="@+id/ca_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/country_by_asc_order"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/lightGrey" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/country_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="24dp">
+
+            <TextView
+                android:id="@+id/cd_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/country_by_desc_order"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/lightGrey" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/total_cases_asc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="24dp">
+
+            <TextView
+                android:id="@+id/tca_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/total_cases_by_asc_order"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/lightGrey" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/total_cases_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="24dp">
+
+            <TextView
+                android:id="@+id/tcd_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/total_cases_by_desc_order"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/lightGrey" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/death_asc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="24dp">
+
+            <TextView
+                android:id="@+id/da_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/death_by_asc_order"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/lightGrey" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/death_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="24dp">
+
+            <TextView
+                android:id="@+id/dd_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/death_by_desc_order"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/lightGrey" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/total_recover_asc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="24dp">
+
+            <TextView
+                android:id="@+id/tra_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/total_recover_by_asc_order"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/lightGrey" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/total_recover_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="24dp">
+
+            <TextView
+                android:id="@+id/trd_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/total_recover_by_desc_order"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/border_line"
+            android:text="@string/clear_sort"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:backgroundTint="@color/green_color" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
